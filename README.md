@@ -1,25 +1,32 @@
 <<<<<<< HEAD
-mpris-cpp
+mpris-cxx
 =========
 
 A C++ implementation of the MPRIS standard to control media players using the dbus-C++ library
 
 Requirements
 ============
+
+make
+gcc
+pkg-config
 libdbus-C++ (http://dbus-cplusplus.sourceforge.net/)
 
 Usage
 =====
 
-Simply add the files to your build path and include "Mpris.hpp".
-Make sure to add dbus-c++-1 to your linking path as well.
+``` bash
+./configure
+make
+sudo make install
+```
 
 Example
 =======
 ``` c++
 //test.cpp
 
-#include "Mpris.hpp"
+#include <Mpris-cxx.hpp>
 
 int main(int argc, char** argv)
 {
@@ -41,9 +48,3 @@ int main(int argc, char** argv)
 	Root.Quit();
 }
 ```
-=======
-mpris-cxx
-=========
-
-A simple binding of the MPRIS media control standard in C++ using dbus-c++
->>>>>>> 3daa41198e64809f89d0f298b8b5bfaac4104e8d
