@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 mpris-cxx
 =========
 
@@ -8,8 +7,11 @@ Requirements
 ============
 
 make
+
 gcc
+
 pkg-config
+
 libdbus-C++ (http://dbus-cplusplus.sourceforge.net/)
 
 Usage
@@ -26,7 +28,7 @@ Example
 ``` c++
 //test.cpp
 
-#include <Mpris-cxx.hpp>
+#include <mpris-cxx.hpp>
 
 int main(int argc, char** argv)
 {
