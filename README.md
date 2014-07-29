@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 mpris-cpp
 =========
 
@@ -40,3 +41,9 @@ int main(int argc, char** argv)
 	Root.Quit();
 }
 ```
+=======
+mpris-cxx
+=========
+
+A simple binding of the MPRIS media control standard in C++ using dbus-c++
+>>>>>>> 3daa41198e64809f89d0f298b8b5bfaac4104e8d
