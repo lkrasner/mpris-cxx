@@ -14,8 +14,8 @@ pkg-config
 
 libdbus-C++ (http://dbus-cplusplus.sourceforge.net/)
 
-Usage
-=====
+Instalation
+===========
 
 ``` bash
 ./configure
