@@ -14,7 +14,7 @@ pkg-config
 
 libdbus-C++ (http://dbus-cplusplus.sourceforge.net/)
 
-Instalation
+Installation
 ===========
 
 ``` bash
