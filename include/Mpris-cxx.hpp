@@ -1,4 +1,9 @@
 //Mpris.hpp
+/*
+ * @author Luke Krasner (luke@lukekrasner.com)
+ *
+ * Class to implement the mpris v1 interface
+ */
 
 #ifndef MPRIS_HPP
 #define MPRIS_HPP
@@ -14,6 +19,9 @@ public:
 
 	~Mpris();
 
+	/*
+	 * @brief currently unimplemented signals
+	 */
 	void TrackChange(const std::map< std::string, ::DBus::Variant >& argin0);
 	void StatusChange(const ::DBus::Struct< int32_t, int32_t, int32_t, int32_t >& argin0);
 	void CapsChange(const int32_t& argin0);
