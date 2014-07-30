@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/mpris-cxx
+
+Name: mpris-cxx
+Description: c++ binding of the MPRIS protocol
+Version: 0.9
+Requires: dbus-c++-1
+Libs: -L${libdir} -lmpris-cxx
+Cflags: -I${includedir}
+

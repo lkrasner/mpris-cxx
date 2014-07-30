@@ -23,10 +23,12 @@ install : all
 	install $(LIB_DIR)/* $(INSTALL_DIR)/lib
 	mkdir -p $(INSTALL_DIR)/include/mpris-cxx
 	install -D include/* $(INSTALL_DIR)/include/mpris-cxx/
+	install -D mpris-cxx.pc $(INSTALL_DIR)/lib/pkgconfig/
 
 uninstall :
 	rm $(INSTALL_DIR)/lib/libmpris-cxx.so
 	rm -r $(INSTALL_DIR)/include/mpris-cxx
+	rm $(INSTALL_DIR)/lib/pkgconfig/mpris-cxx.pc
 clean :
 	@rm -f src/*.o
 	@rm -f lib/*
@@ -36,4 +38,4 @@ $(LIB_DIR)/%.so :
 
 % : %.o
 	$(CXX) $(LDFLAGS) -o $@ $< $(LDLIBS)
-.PHONY : all clean debug
+.PHONY : all clean debug install uninstall
